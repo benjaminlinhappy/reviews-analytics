@@ -22,3 +22,11 @@ for d in data:
 print('there are', len(new), 'reviews length less than 100')
 print(new[0])
 print(new[1])
+
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('there are', len(good), 'reviews that mentioned "good"')
+print(good[0])
