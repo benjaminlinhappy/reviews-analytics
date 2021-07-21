@@ -24,9 +24,17 @@ print(new[0])
 print(new[1])
 
 
-good = []
-for d in data:
-	if 'good' in d:
-		good.append(d)
-print('there are', len(good), 'reviews that mentioned "good"')
-print(good[0])
+#good = []
+#for d in data:
+# 	if 'good' in d:
+# 		good.append(d)
+#print('there are', len(good), 'reviews that mentioned "good"')
+
+good = [1 for d in data if 'good' in d] 
+print(good)
+
+bad = ['bad' in d for d in data]
+print(bad)
+
+
+
